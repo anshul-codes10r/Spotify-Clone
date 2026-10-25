@@ -1,0 +1,575 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #121212;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+.premium-hero {
+    position: relative;
+    overflow: hidden;
+    height: 35vh;
+}
+.premium-hero .head {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 1rem solid #000000;
+}
+.premium-hero .premium-brand {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    top: 40%;
+    left: 1rem;
+}
+.premium-hero h1 {
+    position: absolute;
+    top: 60%;
+    left: 1rem;
+    right: 1rem;
+}
+.premium-hero .offer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border: none;
+    background-color: #1F1F1F;
+    bottom: 1.2rem;
+    left: 1rem;
+    padding: 5px 3px;
+    border-radius: 5px;
+    gap: 0.3rem;
+}
+.sections .premium {
+    padding: 0 1rem;
+}
+.sections .premium button {
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 1rem;
+} 
+.sections .premium p {
+    margin: 1.5rem 0 0 0;
+    color: #B3B3B3;
+}
+.sections .premium p span {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+.why h2 {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #404040;
+    margin-bottom: 1rem;
+}
+.sections .why {
+    border: none;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    padding: 0.5rem 0 1rem 1rem;
+    margin-top: 2rem;
+}
+.sections .benefit {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+.sections .plan {
+    font-weight: 600;
+    margin: 2rem 0 1.5rem 1rem;
+    
+}
+
+/* Standard */
+.standard .limited h3 {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #404040;
+    margin-bottom: 1rem;
+}
+.standard .month-plan {
+   margin: 0; 
+   display: inline-block;
+   background-color: #1ED760;
+   color: #000;
+   font-weight: 800;
+   padding: 5px 8px;
+}
+.standard .premium-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    top: 40%;
+    left: 1rem;
+    margin: 1.5rem 0 1rem 1rem;
+}
+.standard .stan {
+    color: #1ED760;
+    font-weight: 700;
+    margin: 0 0 0 1rem
+}
+.standard .limited h2 {
+    margin: 0.5rem 0 0 1rem;
+    font-weight: 600;
+}
+.standard .limited h3 {
+    margin: 0.1rem 0 0 1rem;
+    font-weight: 400;
+    color: #B3B3B3;
+}
+.standard .benefits ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.standard .benefits ul li {
+    margin-left: 2.5rem;
+    font-weight: 300;
+    font-size: 18px;
+}
+.standard .benefits ul li:first-child {
+    margin-top: 1rem;
+}
+.btn-try {
+    padding: 0 1rem;
+}
+.standard .btn-try .try {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 15px;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    background-color: #1ED760;
+    color: #000;
+    align-items: center;
+}
+.standard .btn-try .one-time {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 15px;
+    margin-top: 1rem;
+    font-weight: 700;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #ffffff;
+    align-items: center;
+}
+.standard p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: #B3B3B3;
+}
+.standard p span {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+.sections .standard {
+    border: none;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    padding: 0.5rem 0 1rem 1rem;
+    margin: 2rem 1rem 0;
+    padding: 0 1rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Platinum */
+.sections .platinum {
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    margin: 2rem 1rem 0;
+    padding: 1rem 1rem 1.5rem;
+}
+
+.platinum .premium-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 1.5rem;
+}
+
+.platinum .offers h1 {
+    color: #E2F33C;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.platinum .offers h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #404040;
+}
+
+.platinum .benefits ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.platinum .benefits ul li {
+    margin-left: 2rem;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.platinum button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #E2F33C;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.platinum p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: #B3B3B3;
+}
+
+.platinum p span {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+/* Student */
+.sections .student {
+    position: relative;
+    overflow: hidden;
+    background-color: #1F1F1F;
+    border-radius: 10px;
+    margin: 2rem 1rem 0;
+    padding: 3.5rem 1rem 1.5rem;
+}
+
+/* Savings available badge */
+.student > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #96F0B6;
+    color: #000;
+    font-weight: 700;
+    border-radius: 10px 0 4px 0;
+}
+
+.student .premium-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 1.5rem;
+}
+
+.student h1 {
+    color: #96F0B6;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.student h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0;
+}
+
+.student > h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #B3B3B3;
+    margin: 0.1rem 0 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #404040;
+}
+
+.student .benefits ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.student .benefits ul li {
+    margin-left: 2rem;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.student .benefits ul li:first-child {
+    margin-top: 0.5rem;
+}
+
+.student button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #96F0B6;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.student p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 1rem;
+    color: #B3B3B3;
+}
+
+.student p span {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+.sections .student {
+    margin: 2rem 1rem 6rem;
+}
+/* bottom-nav */
+ .f-icon {
+    display: none;
+}
+.active .o-icon {
+    display: none;
+}
+.active .f-icon {
+    display: inline;
+}
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 4rem;
+    background: linear-gradient(
+        to bottom,
+        rgba(18, 18, 18, 0) 0%,
+        rgba(18, 18, 18, 0.4) 15%,
+        rgba(18, 18, 18, 0.7) 30%,
+        rgba(18, 18, 18, 1) 65%,
+        #121212 100%
+    );
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-around;
+}
+nav a span {
+    color: white;
+}
+nav a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav .o-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+nav .f-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+/* Create btn*/
+.create .f-icon {
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+.create.create-active .o-icon {
+    display: none;
+}
+
+.create.create-active .f-icon {
+    display: inline;
+    transform: rotate(45deg);
+}
+/* Bottom Music Player */
+.music-player {
+    position: fixed;
+    bottom: 4.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.5rem;
+    background: #1E1E1E;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+
+.player-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
+/* Song Information */
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.song-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.song-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.song-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.song-artist {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.7rem;
+    color: #B3B3B3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Previous, Play, Next */
+.player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.player-controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+    border: none;
+    background: transparent;
+}
+
+.player-controls img {
+    display: block;
+    width: 1.15rem;
+    height: 1.15rem;
+}
+
+.player-controls .play-pause-btn img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+/* Progress Bar */
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+    color: #B3B3B3;
+    font-size: 0.65rem;
+}
+
+.current-time,
+.duration {
+    flex-shrink: 0;
+    font-variant-numeric: tabular-nums;
+}
+
+.progress-bar {
+    flex: 1;
+    min-width: 0;
+    height: 3px;
+    accent-color: #1ED760;
+    cursor: pointer;
+}
+
+/* Smaller screens */
+@media (max-width: 360px) {
+    .music-player {
+        left: 0.35rem;
+        right: 0.35rem;
+        padding: 0.4rem;
+    }
+
+    .player-controls {
+        gap: 0.25rem;
+    }
+
+    .song-image {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .player-controls img {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .player-controls .play-pause-btn img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+}
