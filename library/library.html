@@ -1,1 +1,137 @@
 <!-- Library page -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="library.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="library-head">
+        <div class="top-row">
+            <img class="profile" src="assets/images/profile.jpg" alt="">
+            <h1>Your library</h1>
+            <img class="search" src="assets/logo.svg/search2.svg" alt="" />
+            <img class="plus" src="assets/logo.svg/plus2.svg" alt="" />
+        </div>
+        <div class="bottom-row">
+            <span class="playlists">Playlists</span>
+        </div>
+    </header>
+    <main>
+        <div class="second-head">
+            <div class="recent-item">
+                <img src="assets/logo.svg/recents.svg" alt="" />
+                <h4>Recents</h4>  
+            </div>
+            <img class="squares" src="assets/logo.svg/4squares.svg" alt="" />  
+        </div>
+        <section class="icons">
+            <div class="icon">
+               <img class="liked" src="assets/images17/liked.png" alt="" /> 
+               <h3>Liked Songs</h3>
+            </div>
+            <div class="icon">
+                <img class="artist" src="assets/logo.svg/plus.svg" alt="" />
+                <h3>Add Artists</h3>
+            </div>
+            <div class="icon">
+                <img class="artist" src="assets/logo.svg/s-plus.svg" alt="" />
+                <h3>Add Podcasts</h3>
+            </div>
+            <div class="icon">
+                <img class="artist" src="assets/logo.svg/s-plus.svg" alt="" />
+                <h3>Add events and venues</h3>
+            </div>
+            <div class="icon">
+                <img class="artist" src="assets/logo.svg/s-plus.svg" alt="" />
+                <h3>Import your music</h3>
+            </div>
+        </section>
+    </main>
+    <nav class="bottom-nav" aria-label="Main navigation">
+       <a href="index.html" class="home">
+           <img class="o-icon" src="assets/logo.svg/home-o.svg" alt="" />
+            <img class="f-icon" src="assets/logo.svg/home-f.svg" alt="" />
+           <span>Home</span>
+       </a>
+       <a href="search.html" class="search">
+           <img class="o-icon" src="assets/logo.svg/search-o.svg" alt="" />
+           <img class="f-icon" src="assets/logo.svg/search-f.svg" alt="" />
+           <span>Search</span>
+       </a>
+       <a href="library.html" class="library active">
+           <img class="o-icon" src="assets/logo.svg/library-o.svg" alt="" />
+           <img class="f-icon" src="assets/logo.svg/library-f.svg" alt="" />
+           <span>Your Library</span>
+       </a>
+       <a href="premium.html" class="premium">
+           <img class="o-icon" src="assets/logo.svg/spotify-o.svg" alt="" />
+           <img class="f-icon" src="assets/logo.svg/spotify-f.svg" alt="" />
+           <span>Premium</span>
+       </a>
+       <a href="create.html" class="create">
+           <img class="o-icon" src="assets/logo.svg/plus-o.svg" alt="">
+           <img class="f-icon" src="assets/logo.svg/plus-f.svg" alt="">
+           <span>Create</span>
+       </a>
+   </nav> 
+    <div class="music-player">
+
+        <div class="player-top">
+            <div class="song-info">
+                <img
+                    class="song-image"
+                    src="assets/images/poster1.jpg"
+                    alt="Song cover"
+                />
+
+                <div class="song-details">
+                    <p class="song-title">Ishq</p>
+                    <span class="song-artist">Ig - jharajnish21</span>
+                </div>
+            </div>
+            <div class="player-controls">
+
+                <button class="previous-btn" type="button"
+                    aria-label="Previous song">
+                    <img src="assets/logo.svg/previous.svg" alt="" />
+                </button>
+
+                <button class="play-pause-btn" type="button"
+                    aria-label="Play">
+                    <img src="assets/logo.svg/play.svg" alt="" />
+                </button>
+
+                <button class="next-btn" type="button"
+                    aria-label="Next song">
+                    <img src="assets/logo.svg/next.svg" alt="" />
+                </button>
+
+            </div>
+        </div>
+        <div class="progress-container">
+            <span class="current-time">0:00</span>
+
+            <input
+                class="progress-bar"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                aria-label="Song progress"
+            />
+
+            <span class="duration">0:00</span>
+        </div>
+
+    </div>
+</body>
+</html>
