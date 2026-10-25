@@ -1,1 +1,813 @@
 <!-- Home page -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spotify-Clone</title>
+    
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    
+    <!-- files link -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Profile Picture and Filter button -->
+   <header>
+       <img src="assets/images/profile.jpg" alt="Profile picture">
+       <div class="filter-buttons">
+            <button>All</button>
+            <button>Music</button>
+            <button>Podcasts</button>
+       </div>
+   </header>
+   <!-- 8 Boxes and other content -->
+   <main>
+       <section class="boxes">
+            <a href="#" class="box">
+               <img src="assets/images/lost.jpeg" alt="">
+               <span class="playlist-name">Lost in My Own World🫠</span>
+            </a>
+            <a href="#" class="box">
+               <img src="assets/images/vibes.jpg" alt="">
+                <span class="playlist-name">Romantic Vibes❤️</span>
+            </a>
+            <a href="#" class="box">
+               <img src="assets/images/sad.jpg" alt="">
+              <span class="playlist-name">Sad Songs🥀</span>
+            </a>
+            <a href="#" class="box">
+               <img src="assets/images/hindi.jpg" alt="">
+               <span class="playlist-name">Hot Hindi Hits🔥</span>
+            </a>
+            <a href="#" class="box">
+               <img src="assets/images/english.jpg" alt="">
+               <span class="playlist-name">English Hits🎵</span>
+            </a> 
+            <a href="#" class="box">
+                <img src="assets/images/late.jpg" alt="">
+                <span class="playlist-name">Late Night Vibes🌙</span>
+            </a>
+            <a href="#" class="box">
+               <img src="assets/images/hype.jpg" alt="">
+               <span class="playlist-name">Hype Mode⚡</span>
+            </a>
+            <a href="#" class="box">
+                <img src="assets/images/all.jpg" alt="">
+                <span  class="playlist-name">All-Time Favourites🎧</span>
+            </a>
+       </section>
+        <section>
+           <h2>Jump Back in</h2>
+           <div class="posters">
+                <a href="#" class="poster" data-song="assets/songs/ishq.mp3">
+                    <img src="assets/images/poster1.jpg" alt="">
+                    <div class="category">Playlist</div>
+                    <p class="poster-title">DAR LAGTA NA HOJAAYE YAARI SOHNE RANGDE ❤️...</p>
+                    <span class="creator-name">
+                        Ig - jharajnish21
+                    </span>
+                </a>
+                <a href="#" class="poster" data-song="assets/songs/kalyani.mp3">
+                    <img src="assets/images/poster2.jpg" alt="">
+                    <div class="category">Playlist</div>
+                    <p class="poster-title">KALYANI 🌸💙🌸-Hindi Version</p>
+                    <span class="genre">
+                        #Vibes
+                    </span>
+                </a>
+                <a href="#" class="poster" data-song="assets/songs/kalyani.mp3">
+                    <img src="assets/images/poster3.jpg" alt="">
+                    <div class="category">Playlist</div>
+                    <p class="poster-title">Kalyani(Remix)- Hindi Version</p>
+                    <span class="genre">
+                        HITS MUSIC
+                    </span>
+                </a>
+                <a href="#" class="poster" data-song="assets/songs/kalyani-phonk.mp3">
+                    <img src="assets/images/poster4.jpeg" alt="">
+                    <div class="category">Single</div>
+                    <p class="poster-title">KALYANI PHONK</p>
+                    <span class="creator-name">
+                        Aorax
+                    </span>
+                </a>
+           </div>
+       </section> 
+        <section class="new-releases">
+           <h2>New releases for you</h2>
+           <div class="posters">
+                <a href="#" class="poster">
+                    <img src="assets/images2/heart.jpg" alt="">
+                    <div class="category">Compilation</div>
+                    <p class="poster-title">Heartbeat Diaries</p>
+                    <span class="creator-name">
+                        Arijit Singh, Jyotica Tangri,  Sunidhi Ch...
+                    </span>
+                </a>
+                <a href="#" class="poster">
+                    <img src="assets/images2/garba.jpeg" alt="">
+                    <div class="category">Compilation</div>
+                    <p class="poster-title">Non Stop Garba Beats</p>
+                    <span class="creator-name">
+                        Pritam, Arijit Singh, Jyotica Tangri, Jon...
+                    </span>
+                </a>
+                <a href="#" class="poster">
+                    <img src="assets/images2/mix.jpeg" alt="">
+                    <div class="category">Compilation</div>
+                    <p class="poster-title">Mohabbat Mixtape</p>
+                    <span class="creator-name">
+                        Amitabh Bhattacharya, Sachin Jigar, A...
+                    </span>
+                </a>
+                <a href="#" class="poster">
+                    <img src="assets/images2/struck.jpeg" alt="">
+                    <div class="category">Compilation</div>
+                    <p class="poster-title">Love Struck</p>
+                    <span class="creator-name">
+                        Jyotica Tangri, Shreya Ghosal, Arijit S...
+                    </span>
+                </a>
+                <a href="#" class="poster">
+                    <img src="assets/images2/night.jpeg" alt="">
+                    <div class="category">Album</div>
+                    <p class="poster-title">Palace for the People</p>
+                    <span class="creator-name">
+                        Greta Van Fleet
+                    </span>
+                </a>
+                <a href="#" class="poster">
+                    <img src="assets/images2/sahra.jpeg" alt="">
+                    <div class="category">Single</div>
+                    <p class="poster-title">Sahra</p>
+                    <span class="creator-name">
+                        Gajendra Verma
+                    </span>
+                </a>
+                <a href="#" class="poster">
+                    <img src="assets/images2/pop.jpeg" alt="">
+                    <div class="category">Single</div>
+                    <p class="poster-title">Pop it</p>
+                    <span class="creator-name">
+                        Gunna
+                    </span>
+                </a>
+                <a href="#" class="poster">
+                    <img src="assets/images2/girl.jpeg" alt="">
+                    <div class="category">Album</div>
+                    <p class="poster-title">Mud</p>
+                    <span class="creator-name">
+                        Remi Wolf
+                    </span>
+                </a>
+                <a href="#" class="poster">
+                    <img src="assets/images2/movie.jpeg" alt="">
+                    <div class="category">Single</div>
+                    <p class="poster-title">Tujh Mein Basi Meri Jaan (From "Prahaar: The Untold Story Of Ujjwal ...</p>
+                    <span class="creator-name">
+                        Pritam, Sonu Nigam, Shreya Ghosal, ...
+                    </span>
+                </a>
+                <a href="#" class="poster">
+                    <img src="assets/images2/lights.jpeg" alt="">
+                    <div class="category">Single</div>
+                    <p class="poster-title">Wish Upon You</p>
+                    <span class="creator-name">
+                        Florence Road
+                    </span>
+                </a>
+           </div>
+       </section> 
+       <section class="recents">
+           <div class="recent-header">
+                <h2>Recents</h2>
+                <button class="btn">Show all</button>
+           </div>
+           <div class="recent-items">
+               <a href="#" class="recent-item">
+                   <img src="assets/images3/xxx.jpeg" alt="">
+                   <p class="poster-title">HOPE</p>
+                   <div class="artist">XXXTENTACION</div>
+               </a>
+               <a href="#" class="recent-item">
+                   <img src="assets/images3/stan.jpeg" alt="" />
+                   <p class="poster-title">SNAKE</p>
+                   <div class="artist">MC Stan</div>
+               </a>
+               <a href="#" class="recent-item">
+                   <img src="assets/images3/star.jpeg" alt="" />
+                   <p class="poster-title">Starboy</p>
+                   <div class="artist">The Weeknd</div>
+               </a>
+               <a href="#" class="recent-item">
+                   <img src="assets/images3/sea.jpeg" alt="">
+                   <p class="poster-title">HIT ME HARD AND SOFT</p>
+                   <div class="artist">Billie Ellish</div>
+               </a>
+               <a href="#" class="recent-item">
+                   <img src="assets/images3/stand.jpeg" alt="" />
+                   <p class="poster-title">P-POP CULTURE</p>
+                   <div class="artist">
+                       Album • Karan Aujla & Ikky
+                   </div>
+               </a>
+               <a href="#" class="recent-item">
+                   <img src="assets/images3/aujla.jpeg" alt="" />
+                   <p class="poster-title">Making Memories</p>
+                   <div class="artist">Album • Karan Aujla & Ikky</div>
+               </a>
+               <a href="#" class="recent-item">
+                   <img src="assets/images3/aashiqui.jpg" alt="" />
+                   <p class="poster-title">Aashiqui 2</p>
+                   <div class="artist">
+                       Soundtrack • Mithoon & Various Artists
+                   </div>
+               </a>
+               <a href="#" class="recent-item">
+                   <img src="assets/images3/saiyaara.jpg" alt="" />
+                   <p class="poster-title">Saiyarra</p>
+                   <div class="artist">Album • Various Artists</div>
+               </a>
+           </div>
+       </section>
+       <section class="stations">
+           <h2 class="station-header">Recommended Stations</h2>
+           <div class="station-items">
+               <a href="#" class="station-item">
+                   <img src="assets/images4/station1.jpeg" alt="" />
+                   <p class="station-artists">Inward Universe, Mister Monj, Leo Kain, Zhoneus Deep</p>
+               </a>
+               <a href="#" class="station-item">
+                   <img src="assets/images4/station2.jpeg" alt="" />
+                   <p class="station-artists">CAPTAIN, Jaywin, COSMO</p>
+               </a>
+               <a href="#" class="station-item">
+                   <img src="assets/images4/station3.jpeg" alt="" />
+                   <p class="station-artists">Jah Khalib, MiyaGi & Andy Panda, HammAll & Naval</p>
+               </a>
+               <a href="#" class="station-item">
+                   <img src="assets/images4/station4.jpeg" alt="" />
+                   <p class="station-artists">Ellen Allen, RBrown, Quazer, Stephan Maman</p>
+               </a>
+               <a href="#" class="station-item">
+                   <img src="assets/images4/station5.jpeg" alt="" />
+                   <p class="station-artists">DadouOGP, David Bowie, Venom</p>
+               </a>
+               <a href="#" class="station-item">
+                   <img src="assets/images4/station6.jpeg" alt="" />
+                   <p class="station-artists">William Adams, Allan Pineda Lindo, Taboo, Fergie</p>
+               </a>
+           </div>
+       </section>
+       <section class="todays-hits">
+           <h2 class="hit-header">Today's biggest hits</h2>
+           <div class="hit-items">
+               <a href="#" class="hit-item">
+                   <img src="assets/images5/img1.jpeg" alt="" />
+                   <p class="album-artists">Alka Yagnik, Mithoon, Sachin-Jigar, Sunidhi Chauhan, Tanishk Bagchi</p>
+               </a>
+               <a href="#" class="hit-item">
+                   <img src="assets/images5/img2.jpeg" alt="" />
+                   <p class="album-artists">Ajay-Atul, Sanju Rathod, Vishali Samant, Rapperiya Balem, Radhika Bh...</p>
+               </a>
+               <a href="#" class="hit-item">
+                   <img src="assets/images5/img3.jpeg" alt="" />
+                   <p class="album-artists">Olivia Rodrigo, Shakira, Zara Larsson, Shashwat Sachdev, Anuj Jain</p>
+               </a>
+               <a href="#" class="hit-item">
+                   <img src="assets/images5/img4.jpeg" alt="" />
+                   <p class="album-artists">Atif Aslam, Mithoon, Shaswat Sachdev, Satinder Sartaaj, Akhil Sachdeva</p>
+               </a>
+               <a href="#" class="hit-item">
+                   <img src="assets/images5/img5.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Karan Aujla, Sai Abhyankkar, Shaswant Sachdev, Vishal Mishra</p>
+               </a>
+               <a href="#" class="hit-item">
+                   <img src="assets/images5/img6.jpeg" alt="" />
+                   <p class="album-artists">Banjaare, Aditya Rikhari, Navjot Ahuja, Noor, Paresh Pahuja</p>
+               </a>
+               <a href="#" class="hit-item">
+                   <img src="assets/images5/img7.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Anirudh Ravichander, Mithoon, Sachin-Jigar, Sunidhi Chauhan</p>
+               </a>
+               <a href="#" class="hit-item">
+                   <img src="assets/images5/img8.jpeg" alt="" />
+                   <p class="album-artists">Karan Aujla, Cheema Y, Sidhu moose waala, Anuv Jain, AP Dhillon</p>
+               </a>
+           </div>
+       </section>
+       <section class="motivation">
+           <h2>Mindset & Motivation</h2>
+            <iframe src="https://www.youtube.com/embed/30g_ZIYpqaQ?si=E_OEGAmI50NwbDQN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+       </section>
+       <section class="workout">
+           <h2>Workout</h2>
+           <div class="workout-items">
+               <a href="#" class="workout-item">
+                   <img src="assets/images6/poster1.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Shaswant Sachdev, Yo Yo Honey Singh, Jasmine Sandlas, Amaal Malik</p>
+               </a>
+               <a href="#" class="workout-item">
+                   <img src="assets/images6/poster2.jpeg" alt="" />
+                   <p class="album-artists">Vishal-Shekhar, Sachin-Jigar, Shaswant Sachdev, Dhanda Nyoliwala, Amit Trive...</p>
+               </a>
+               <a href="#" class="workout-item">
+                   <img src="assets/images6/poster3.jpeg" alt="" />
+                   <p class="album-artists">Pritam, A.R. Rahman, Sunidhi Chauhan, Rahat Fateh Ali Khan, Amit Trivedi</p>
+               </a>
+               <a href="#" class="workout-item">
+                   <img src="assets/images6/poster4.jpeg" alt="" />
+                   <p class="album-artists">Drake, Travis Scott, Kendrick Lamar, Sean Paul, Bruson Tiller</p>
+               </a>
+               <a href="#" class="workout-item">
+                   <img src="assets/images6/poster5.jpeg" alt="" />
+                   <p class="album-artists">Rihanna, Coldplay, Justin Timberlake, Britney Spears, Gorillaz</p>
+               </a>
+               <a href="#" class="workout-item">
+                   <img src="assets/images6/poster6.jpeg" alt="" />
+                   <p class="album-artists">Tylor Swift, Harry Styles, KATSEYE, Pink Pantheress, LE SSERAFIM</p>
+               </a>
+               <a href="#" class="workout-item">
+                   <img src="assets/images6/poster7.jpeg" alt="" />
+                   <p class="album-artists">Drake, Bad Bunny, Karol G, Shakira, Dua Lipa</p>
+               </a>
+               <a href="#" class="workout-item">
+                   <img src="assets/images6/poster8.jpeg" alt="" />
+                   <p class="album-artists">Karan Aujla, Cheema Y, Sidhu moose wala, Diljit Dosanjh, Shubh</p>
+               </a>
+               <a href="#" class="workout-item">
+                   <img src="assets/images6/poster9.jpeg" alt="" />
+                   <p class="album-artists">Drake, Future, Gunna, Quavo, Nemzzz</p>
+               </a>
+               <a href="#" class="workout-item">
+                   <img src="assets/images6/poster10.jpeg" alt="" />
+                   <p class="album-artists">Ajay-Atul, Anay Gogavale, Sanju Rathod, SAMBATA, Bela Shende</p>
+               </a>
+           </div>
+       </section>
+       <section class="happy">
+           <h2>Happy</h2>
+           <div class="happy-items">
+               <a href="#" class="happy-item">
+                   <img src="assets/images7/poster1.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Sunidhi Chauhan, Mohit Chauhan, Sachet Tandon, Armaan Malik</p>
+               </a>
+               <a href="#" class="happy-item">
+                   <img src="assets/images7/poster2.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Udit Narayan, Sachin-Jigar, Tanishk Bagchi, Shaswat Sachdev</p>
+               </a>
+               <a href="#" class="happy-item">
+                   <img src="assets/images7/poster3.jpeg" alt="" />
+                   <p class="album-artists">Sonu Nigam, Thaman S, Sanjith Hegde, B.Ajaneesh Loknath, Arjun Janya</p>
+               </a>
+               <a href="#" class="happy-item">
+                   <img src="assets/images7/poster4.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Sonu Nigam, Tanishk Bagchi, Neeti Mohan, Anand Raj Anand</p>
+               </a>
+               <a href="#" class="happy-item">
+                   <img src="assets/images7/poster5.jpeg" alt="" />
+                   <p class="album-artists">Anirudh Ravichander, Sai Abhyankkar, G.V.Prakash, Karthik, Justin Prabhaka...</p>
+               </a>
+               <a href="#" class="happy-item">
+                   <img src="assets/images7/poster6.jpeg" alt="" />
+                   <p class="album-artists">Anirudh Ravichander, G.V.Prakash, Santhosh Narayanan, Guru Randhawa...</p>
+               </a>
+               <a href="#" class="happy-item">
+                   <img src="assets/images7/poster7.jpeg" alt="" />
+                   <p class="album-artists">Arijit Singh, Pritam, Vishal Mishra, Anuv Jain, Himesh Reshammiya</p>
+               </a>
+               <a href="#" class="happy-item">
+                   <img src="assets/images7/poster8.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Amaal Malik, Jasleen Royal, Anand Raj Anand, Salim-Sulaiman</p>
+               </a>
+               <a href="#" class="happy-item">
+                   <img src="assets/images7/poster9.jpeg" alt="" />
+                   <p class="album-artists">Anirudh Ravichander, A.R.Rahman, Sai Abhyankkar, G.V.prakash, THAMAN S</p>
+               </a>
+               <a href="#" class="happy-item">
+                   <img src="assets/images7/poster10.jpeg" alt="" />
+                   <p class="album-artists">Alka Yagnik, Udit Narayan, Kumar Sanu, Sonu Nigam, Anand Milind</p>
+               </a>
+           </div>
+       </section>
+       <section class="party">
+           <h2>Party</h2>
+           <div class="party-items">
+               <a href="#" class="party-item">
+                   <img src="assets/images8/poster1.jpeg" alt="" />
+                   <p class="album-artists">Sachin Jigar, Shaswat Sachdev, Neha Kakkar, Anu Malik, Meet Bros.</p>
+               </a>
+               <a href="#" class="party-item">
+                   <img src="assets/images8/poster2.jpeg" alt="" />
+                   <p class="album-artists">Yo Yo Honey Singh, Badshah, Neha Kakkar, Guru Randhawa, Aastha Gill</p>
+               </a>
+               <a href="#" class="party-item">
+                   <img src="assets/images8/poster3.jpeg" alt="" />
+                   <p class="album-artists">Alka Yagnik, Udit Narayan, Kumar Sanu, Anu Malik, Anand Milind</p>
+               </a>
+               <a href="#" class="party-item">
+                   <img src="assets/images8/poster4.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Vishal-Shekar, Himesh Reshammiya, Shankar Ehsaan, Loy-Su...</p>
+               </a>
+               <a href="#" class="party-item">
+                   <img src="assets/images8/poster5.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Vishal Shekhar, Sachin-Jigar, Shashwat Sachdev, Yo Yo Honey Singh</p>
+               </a>
+               <a href="#" class="party-item">
+                   <img src="assets/images8/poster6.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Sachin-Jigar, Shashwat Sachdev, Himesh Reshammiya, Amit Tr...</p>
+               </a>
+               <a href="#" class="party-item">
+                   <img src="assets/images8/poster7.jpeg" alt="" />
+                   <p class="album-artists">Anirudh Ravichander, A.R. Rahman, Sai Abhyankkar, G.V. Prakash, Harris Jayar...</p>
+               </a>
+               <a href="#" class="party-item">
+                   <img src="assets/images7/poster8.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Amaal Malik, Jasleen Royal, Anand Raj Anand, Salim-Sulaiman</p>
+               </a>
+               <a href="#" class="party-item">
+                   <img src="assets/images7/poster9.jpeg" alt="" />
+                   <p class="album-artists">Anirudh Ravichander, A.R.Rahman, Sai Abhyankkar, G.V.prakash, THAMAN S</p>
+               </a>
+               <a href="#" class="party-item">
+                   <img src="assets/images8/poster10.jpeg" alt="" />
+                   <p class="album-artists">Kunal Ganjawala, Sanju Rathod, Anand Shinde, Avadhoot Gupte, Amitraj</p>
+               </a>
+           </div>
+       </section>
+       <section class="chill">
+           <h2>Chill</h2>
+           <div class="chill-items">
+               <a href="#" class="chill-item">
+                   <img src="assets/images9/poster1.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Atif Aslam, Vishal-Shekhar, Sachin-Jigar, Rochak Kohli</p>
+               </a>
+               <a href="#" class="chill-item">
+                   <img src="assets/images9/poster2.jpeg" alt="" />
+                   <p class="album-artists">Sonu Nigam, Armaan Malik, Harish Raghavendra, Raghu Dixit, Charanraj...</p>
+               </a>
+               <a href="#" class="chill-item">
+                   <img src="assets/images9/poster3.jpeg" alt="" />
+                   <p class="album-artists">Arijit Singh, Pritam, Atif Aslam, Mithoon, Shashwat Sachdev</p>
+               </a>
+               <a href="#" class="chill-item">
+                   <img src="assets/images9/poster4.jpeg" alt="" />
+                   <p class="album-artists">Anirudh Ravichander, G.V. Prakash, Sid Sriram, Haricharan, Naresh Iyer</p>
+               </a>
+               <a href="#" class="chill-item">
+                   <img src="assets/images9/poster5.jpeg" alt="" />
+                   <p class="album-artists">Pritam, A.R. Rahman, Sachin-Jigar, Shashwat Sachdev, Himesh Reshammi...</p>
+               </a>
+               <a href="#" class="chill-item">
+                   <img src="assets/images9/poster6.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Shreya Goshal, Atif Aslam, Mohit Chauhan, Salim-Sulaiman</p>
+               </a>
+               <a href="#" class="chill-item">
+                   <img src="assets/images9/poster7.jpeg" alt="" />
+                   <p class="album-artists">Kishore Kumar, R.D. Burman, Asha Bhosle, Amitabh Bachchan</p>
+               </a>
+               <a href="#" class="chill-item">
+                   <img src="assets/images9/poster8.jpeg" alt="" />
+                   <p class="album-artists">Anirudh Ravichander, A.R. Rahman, G.V. Prakash, Devi Sri Prasad, Harris Jayaraj</p>
+               </a>
+               <a href="#" class="chill-item">
+                   <img src="assets/images9/poster9.jpeg" alt="" />
+                   <p class="album-artists">Shankar Mahadevan, Ajay-Atul, Kunal Ganjawala, Sanju Rathod, Amitraj</p>
+               </a>
+               <a href="#" class="chill-item">
+                   <img src="assets/images9/poster10.jpeg" alt="" />
+                   <p class="album-artists">Pritam, Atif Aslam, Amit Trivedi, Anuv Jain, Banjaare</p>
+               </a>
+           </div>
+       </section>
+       <section class="radio">
+           <h2 class="radio-header">Popular radio</h2>
+           <div class="radio-items">
+               <a href="#" class="radio-item">
+                   <img src="assets/images10/poster1.jpeg" alt="" />
+                   <p class="radio-artists">Jeet Ganngull, Arijit Singh, Pritam, Alka Yagnik, Amit Trivedi</p>
+               </a>
+               <a href="#" class="radio-item">
+                   <img src="assets/images10/poster2.jpeg" alt="" />
+                   <p class="radio-artists">Alka Yagnik, Kumar Sanu, Udit Narayan, Vinod Rathod, Sonu Nigam</p>
+               </a>
+               <a href="#" class="radio-item">
+                   <img src="assets/images10/poster3.jpeg" alt="" />
+                   <p class="radio-artists">Sidhu Moose Wala, Prem Dhillon, Shubh, Karan Aujla, Sunny Malton</p>
+               </a>
+               <a href="#" class="radio-item">
+                   <img src="assets/images10/poster4.jpeg" alt="" />
+                   <p class="radio-artists">Kishore Kumar, Muhammad Rafi, Mukesh, Lata Mangeshkar</p>
+               </a>
+               <a href="#" class="radio-item">
+                   <img src="assets/images10/poster5.jpeg" alt="" />
+                   <p class="radio-artists">A.R. Rahman, Hariharan, Chinmayi Sripada, Yuvan Shankar Raja</p>
+               </a>
+               <a href="#" class="radio-item">
+                   <img src="assets/images10/poster6.jpeg" alt="" />
+                   <p class="radio-artists">Pritam, Vishal Shekhar, Sunidhi Chauhan, Shreya Ghoshal</p>
+               </a>
+               <a href="#" class="radio-item">
+                   <img src="assets/images10/poster7.jpeg" alt="" />
+                   <p class="radio-artists">Shreya Ghoshal, A.R. Rahman, Atif Aslam, Sachin-Jigar, Pritam</p>
+               </a>
+               <a href="#" class="radio-item">
+                   <img src="assets/images10/poster8.jpeg" alt="" />
+                   <p class="radio-artists">Alka Yagnik, Anuradha Paudwal, Udit Narayan, Jatin Lalit</p>
+               </a>
+               <a href="#" class="radio-item">
+                   <img src="assets/images10/poster9.jpeg" alt="" />
+                   <p class="radio-artists">Yo Yo Honey Singh, Badshah, Raftaar, Guru Randhawa, Ikka, Hardy Sandhu</p>
+               </a>
+               <a href="#" class="radio-item">
+                   <img src="assets/images10/poster10.jpeg" alt="" />
+                   <p class="radio-artists">Diljit Dosanjh, Shashwat Sachdev, A.P Dhillon, Badshah, Hardy Sandhu</p>
+               </a>
+           </div>
+       </section>
+       <section class="more">
+            <a href="#" class="more-header">
+                <img src="assets/images11/more-head.jpeg" alt="" />
+                <h4>More like</h4>
+                <h2>MC STAN</h2>
+            </a>
+           <div class="more-items">
+               <a href="#" class="more-item">
+                   <img src="assets/images11/poster1.jpeg" alt="" />
+                   <p class="genre">Playlist</p>
+                   <p class="artists">Sachin-Jigar, Seedhe Mout, DIVINE, ki...</p>
+               </a>
+               <a href="#" class="more-item">
+                   <img src="assets/images11/poster2.jpeg" alt="" />
+                   <p class="album-name">EP</p>
+                   <p class="genre-r">Autobiography</p>
+                   <p class="artists">Loka</p>
+               </a>
+               <a href="#" class="more-item">
+                   <img src="assets/images11/poster3.jpeg" alt="" />
+                   <p class="genre">Playlist</p>
+                   <p class="artists">Sachin-Jigar, Nanku, Karma, Panthar...</p>
+               </a>
+               <a href="#" class="more-item">
+                   <img src="assets/images11/poster4.jpeg" alt="" />
+                   <p class="genre">Playlist</p>
+                   <p class="artists">Karan Aujla, Dhanda Nyoliwala, Diljit D...</p>
+               </a>
+               <a href="#" class="more-item-r">
+                   <img src="assets/images11/poster5.jpeg" alt="" />
+                   <p class="genre">Artist</p>
+                   <p class="artists-r">Vijay DK</p>
+               </a>
+               <a href="#" class="more-item-r">
+                   <img src="assets/images11/poster6.jpeg" alt="" />
+                   <p class="genre">Artist</p>
+                   <p class="artists-r">Emiway Bantai</p>
+               </a>
+               <a href="#" class="more-item-r">
+                   <img src="assets/images11/poster7.jpeg" alt="" />
+                   <p class="genre">Artist</p>
+                   <p class="artists-r">Loka</p>
+               </a>
+               <a href="#" class="more-item">
+                   <img src="assets/images11/poster8.jpeg" alt="" />
+                   <p class="genre">Playlist</p>
+                   <p class="artists">SAMBATA, YUNG DSA, Rocksun, Shrey...</p>
+               </a>
+               <a href="#" class="more-item-r">
+                   <img src="assets/images11/poster9.jpeg" alt="" />
+                   <p class="genre">Artist</p>
+                   <p class="artists-r">Minta</p>
+               </a>
+               <a href="#" class="more-item-r">
+                   <img src="assets/images11/poster10.jpeg" alt="" />
+                   <p class="genre">Artist</p>
+                   <p class="artists-r">MEMAX</p>
+               </a>
+           </div>
+       </section>
+       <section class="more2">
+           <a href="#" class="more2-header">
+               <img src="assets/images12/more2-head.jpeg" alt="" />
+                <h4>Discover more from</h4>
+                <h2>Alan Walker</h2>
+           </a>
+           <div class="more2-items">
+               <a href="#" class="more2-item">
+                   <img src="assets/images12/poster1.jpeg" alt="" />
+                   <p class="artist-names">Sia, Avicii, Alan Walker, Kygo, League of Legends</p>
+               </a>
+               <a href="#" class="more2-item">
+                   <img src="assets/images12/poster2.jpeg" alt="" />
+                   <p class="artist-names">This is Alan Walker. The essential tracks, all in one playlist.</p>
+               </a>
+               <a href="#" class="more2-item">
+                   <img src="assets/images12/poster3.jpeg" alt="" />
+                   <p class="artist-names">David Guetta, HUGEL, Bebe Rexha, Swedish House Mafia, Dimitri Vegas & ...</p>
+               </a>
+               <a href="#" class="more2-item">
+                   <img src="assets/images12/poster4.jpeg" alt="" />
+                   <p class="artist-names">ドレイク、ザ・ウィークエンド、ブルーノ・マーズ、ジャスティン・ビーバー, ...</p>
+               </a>
+               <a href="#" class="more2-item">
+                   <img src="assets/images12/poster5.jpeg" alt="" />
+                   <p class="artist-names">Drake, The Weeknd, Bruno Mars, Rihanna, Pitbull</p>
+               </a>
+               <a href="#" class="more2-item">
+                   <img src="assets/images12/poster6.jpeg" alt="" />
+                   <p class="artist-names">Coldplay, ED Sheeran, Harry Styles, P!nk, The Chainsmokers</p>
+               </a>
+               <a href="#" class="more2-item">
+                   <img src="assets/images12/poster7.jpeg" alt="" />
+                   <p class="artist-names">Travis Scott, Morgan Wallen, Lil Uzi Vert, Evanescence, EsDerkid</p>
+               </a>
+           </div>
+       </section>
+       <section class="for">
+                <h2>Made for Anshul</h2>
+           <div class="for-items">
+               <a href="#" class="for-item">
+                   <img src="assets/images13/poster1.jpeg" alt="" />
+                   <p class="artist-names">Vishal Dadlani, KK, Pritam and more</p>
+               </a>
+               <a href="#" class="for-item">
+                   <img src="assets/images13/poster2.jpeg" alt="" />
+                   <p class="artist-names">Divoy Singh, Dino James, Bixu and more</p>
+               </a>
+               <a href="#" class="for-item">
+                   <img src="assets/images13/poster3.jpeg" alt="" />
+                   <p class="artist-names">Preet Harpal, Dilpreet Dhillon, Jaura Phagwara and more</p>
+               </a>
+               <a href="#" class="for-item">
+                   <img src="assets/images13/poster4.jpeg" alt="" />
+                   <p class="artist-names">Anuv Jain, Maan Panu, Aditya Rikhari and more</p>
+               </a>
+               <a href="#" class="for-item">
+                   <img src="assets/images13/poster5.jpeg" alt="" />
+                   <p class="artist-names">Sachet Tandon, Manan Bhardwaj, Daksh and more</p>
+               </a>
+               <a href="#" class="for-item">
+                   <img src="assets/images13/poster6.jpeg" alt="" />
+                   <p class="artist-names">Sanjay S Yadav, Silent Ocean, Amtee and more</p>
+               </a>
+               <a href="#" class="for-item">
+                   <img src="assets/images13/poster7.jpeg" alt="" />
+                   <p class="artist-names">Your shortcut to hidden gems, deep cuts and future faves, updated every...</p>
+               </a>
+               <a href="#" class="for-item">
+                   <img src="assets/images13/poster8.jpeg" alt="" />
+                   <p class="artist-names">Catch all the latest music from artists you follow, plus new singles picked for...</p>
+               </a>
+           </div>
+       </section>
+       <section class="popular">
+           <h2>Popular artists</h2>
+           <div class="popular-items">
+               <a href="#" class="popular-item">
+                   <img src="assets/images14/poster1.jpeg" alt="" />
+                   <p class="artist">Yo Yo Honey Singh</p>
+               </a>
+               <a href="#" class="popular-item">
+                   <img src="assets/images14/poster2.jpeg" alt="" />
+                   <p class="artist">Arijit Singh</p>
+               </a>
+               <a href="#" class="popular-item">
+                   <img src="assets/images14/poster3.jpeg" alt="" />
+                   <p class="artist">Udit Narayan</p>
+               </a>
+               <a href="#" class="popular-item">
+                   <img src="assets/images14/poster4.jpeg" alt="" />
+                   <p class="artist">Atif Aslam</p>
+               </a>
+               <a href="#" class="popular-item">
+                   <img src="assets/images14/poster5.jpeg" alt="" />
+                   <p class="artist">A.R. Rahman</p>
+               </a>
+               <a href="#" class="popular-item">
+                   <img src="assets/images14/poster6.jpeg" alt="" />
+                   <p class="artist">Anirudh Ravichander</p>
+               </a>
+               <a href="#" class="popular-item">
+                   <img src="assets/images14/poster7.jpeg" alt="" />
+                   <p class="artist">Vishal-Shekhar</p>
+               </a>
+               <a href="#" class="popular-item">
+                   <img src="assets/images14/poster8.jpeg" alt="" />
+                   <p class="artist">Pritam</p>
+               </a>
+               <a href="#" class="popular-item">
+                   <img src="assets/images14/poster9.jpeg" alt="" />
+                   <p class="artist">Shankar-Ehsaan-Loy</p>
+               </a>
+               <a href="#" class="popular-item">
+                   <img src="assets/images14/poster10.jpeg" alt="" />
+                   <p class="artist">Sachin-Jigar</p>
+               </a>
+           </div>
+       </section>
+       <section class="fans">
+           <a href="#" class="fans-head">
+               <img src="assets/images15/fans-head.jpeg" alt="" />
+                <h4>For fans of</h4>
+                <h2>Arijit Singh</h2>
+           </a>
+           <div class="fans-items">
+               <a href="#" class="fans-item">
+                   <img src="assets/images15/poster1.jpeg" alt="" />
+                   <p class="artist-names">Arijit Singh, Pritam, Mithoon, Sachin-Jigar, Shashwat Sachdev</p>
+               </a>
+               <a href="#" class="fans-item">
+                   <img src="assets/images15/poster2.jpeg" alt="" />
+                   <p class="artist-names">Pritam, Anirudh Ravichander, Mithoon, Sachin-Jigar, Sunidhi Chauhan</p>
+               </a>
+           </div>
+       </section>
+   </main>
+   <nav class="bottom-nav" aria-label="Main navigation">
+       <a href="index.html" class="home active">
+           <img class="o-icon" src="assets/logo.svg/home-o.svg" alt="" />
+            <img class="f-icon" src="assets/logo.svg/home-f.svg" alt="" />
+           <span>Home</span>
+       </a>
+       <a href="search.html" class="search">
+           <img class="o-icon" src="assets/logo.svg/search-o.svg" alt="" />
+           <img class="f-icon" src="assets/logo.svg/search-f.svg" alt="" />
+           <span>Search</span>
+       </a>
+       <a href="library.html" class="library">
+           <img class="o-icon" src="assets/logo.svg/library-o.svg" alt="" />
+           <img class="f-icon" src="assets/logo.svg/library-f.svg" alt="" />
+           <span>Your Library</span>
+       </a>
+       <a href="premium.html" class="premium">
+           <img class="o-icon" src="assets/logo.svg/spotify-o.svg" alt="" />
+           <img class="f-icon" src="assets/logo.svg/spotify-f.svg" alt="" />
+           <span>Premium</span>
+       </a>
+       <a href="create.html" class="create">
+           <img class="o-icon" src="assets/logo.svg/plus-o.svg" alt="">
+           <img class="f-icon" src="assets/logo.svg/plus-f.svg" alt="">
+           <span>Create</span>
+       </a>
+   </nav>
+    <div class="music-player">
+
+        <div class="player-top">
+            <div class="song-info">
+                <img
+                    class="song-image"
+                    src="assets/images/poster1.jpg"
+                    alt="Song cover"
+                />
+
+                <div class="song-details">
+                    <p class="song-title">Ishq</p>
+                    <span class="song-artist">Ig - jharajnish21</span>
+                </div>
+            </div>
+            <div class="player-controls">
+
+                <button class="previous-btn" type="button"
+                    aria-label="Previous song">
+                    <img src="assets/logo.svg/previous.svg" alt="" />
+                </button>
+
+                <button class="play-pause-btn" type="button"
+                    aria-label="Play">
+                    <img src="assets/logo.svg/play.svg" alt="" />
+                </button>
+
+                <button class="next-btn" type="button"
+                    aria-label="Next song">
+                    <img src="assets/logo.svg/next.svg" alt="" />
+                </button>
+
+            </div>
+        </div>
+        <div class="progress-container">
+            <span class="current-time">0:00</span>
+
+            <input
+                class="progress-bar"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                aria-label="Song progress"
+            />
+
+            <span class="duration">0:00</span>
+        </div>
+        <audio class="audio-element" preload="metadata"></audio>
+    </div>
+
+
+</body>
+
+</html>
